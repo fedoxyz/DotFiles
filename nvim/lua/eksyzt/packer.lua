@@ -16,7 +16,6 @@ return require('packer').startup(function(use)
 
 	use({ 'rose-pine/neovim', as = 'rose-pine' })
 
-	vim.cmd('colorscheme rose-pine')
 
 	use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
 
@@ -29,8 +28,8 @@ return require('packer').startup(function(use)
 		requires = { {"nvim-lua/plenary.nvim"} }
 	}
 
-	use('tpope/vim_fugitive')
-	use('mbill/undotree')
+	use('tpope/vim-fugitive')
+	use('mbbill/undotree')
 	use {
 		'VonHeikemen/lsp-zero.nvim',
 		branch = 'v3.x',
@@ -46,9 +45,7 @@ return require('packer').startup(function(use)
 		}
 	}
 	use("lukas-reineke/indent-blankline.nvim")
-  use("posva/vim-vue")
   use{'neoclide/coc.nvim', branch = 'release'}
-  
-
-
+use{'yaegassy/coc-volar', { run = 'yarn install --frozen-lockfile' }}
+use{'yaegassy/coc-volar-tools', { run = 'yarn install --frozen-lockfile' }}
 end)

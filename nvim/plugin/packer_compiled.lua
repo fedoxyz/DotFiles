@@ -49,8 +49,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/xi8t/.cache/nvim/packer_hererocks/2.1.1710088188/share/lua/5.1/?.lua;/home/xi8t/.cache/nvim/packer_hererocks/2.1.1710088188/share/lua/5.1/?/init.lua;/home/xi8t/.cache/nvim/packer_hererocks/2.1.1710088188/lib/luarocks/rocks-5.1/?.lua;/home/xi8t/.cache/nvim/packer_hererocks/2.1.1710088188/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/xi8t/.cache/nvim/packer_hererocks/2.1.1710088188/lib/lua/5.1/?.so"
+local package_path_str = "/home/xi8t/.cache/nvim/packer_hererocks/2.1.1716656478/share/lua/5.1/?.lua;/home/xi8t/.cache/nvim/packer_hererocks/2.1.1716656478/share/lua/5.1/?/init.lua;/home/xi8t/.cache/nvim/packer_hererocks/2.1.1716656478/lib/luarocks/rocks-5.1/?.lua;/home/xi8t/.cache/nvim/packer_hererocks/2.1.1716656478/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/xi8t/.cache/nvim/packer_hererocks/2.1.1716656478/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -83,6 +83,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
+  },
+  ["coc-volar"] = {
+    loaded = true,
+    path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/coc-volar",
+    url = "https://github.com/yaegassy/coc-volar"
+  },
+  ["coc-volar-tools"] = {
+    loaded = true,
+    path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/coc-volar-tools",
+    url = "https://github.com/yaegassy/coc-volar-tools"
   },
   ["coc.nvim"] = {
     loaded = true,
@@ -157,17 +167,12 @@ _G.packer_plugins = {
   undotree = {
     loaded = true,
     path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/undotree",
-    url = "https://github.com/mbill/undotree"
+    url = "https://github.com/mbbill/undotree"
   },
-  ["vim-vue"] = {
+  ["vim-fugitive"] = {
     loaded = true,
-    path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/vim-vue",
-    url = "https://github.com/posva/vim-vue"
-  },
-  vim_fugitive = {
-    loaded = true,
-    path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/vim_fugitive",
-    url = "https://github.com/tpope/vim_fugitive"
+    path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   }
 }
 
