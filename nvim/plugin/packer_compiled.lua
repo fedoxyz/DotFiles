@@ -89,11 +89,6 @@ _G.packer_plugins = {
     path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/coc-volar",
     url = "https://github.com/yaegassy/coc-volar"
   },
-  ["coc-volar-tools"] = {
-    loaded = true,
-    path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/coc-volar-tools",
-    url = "https://github.com/yaegassy/coc-volar-tools"
-  },
   ["coc.nvim"] = {
     loaded = true,
     path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/coc.nvim",
@@ -173,6 +168,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-lsp"] = {
+    loaded = true,
+    path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/vim-lsp",
+    url = "https://github.com/prabirshrestha/vim-lsp"
+  },
+  ["vim-lsp-settings"] = {
+    loaded = true,
+    path = "/home/xi8t/.local/share/nvim/site/pack/packer/start/vim-lsp-settings",
+    url = "https://github.com/mattn/vim-lsp-settings"
   }
 }
 
