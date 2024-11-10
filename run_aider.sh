@@ -31,4 +31,4 @@
  fi                                                                                                                                                                         
 
  # Run aider with the specified options and save chat history                                                                                                               
- aider --edit-format udiff --chat-history-file "$chat_history_file" "$@"
+ aider --chat-history-file "$chat_history_file" "$@"
