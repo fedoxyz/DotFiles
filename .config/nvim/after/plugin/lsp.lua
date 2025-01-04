@@ -1,8 +1,7 @@
 local lsp_zero = require('lsp-zero')
+local lspconfig = require('lspconfig')
 
 lsp_zero.on_attach(function(client, bufnr)
-  -- see :help lsp-zero-keybindings
-  -- to learn the available actions
   lsp_zero.default_keymaps({buffer = bufnr})
 end)
 
@@ -16,10 +15,20 @@ require('mason-lspconfig').setup({
         filetypes = { 'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue' }
       })
     end,
+    -- Add a custom handler for Pyright
+    pyright = function()
+      lspconfig.pyright.setup({
+        settings = {
+          python = {
+            analysis = {
+              diagnosticSeverityOverrides = {
+                reportAttributeAccessIssue = "none",
+                reportGeneralTypeIssues = "none"
+              }
+            }
+          }
+        }
+      })
+    end,
   },
 })
-
-local lspconfig = require('lspconfig')
-
--- Add this configuration for Python
-lspconfig.pyright.setup{}
